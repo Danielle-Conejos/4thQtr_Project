@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Millimeter Converter</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fce8cd;
+      color: ##17202A;
+    }
+
+    header {
+      background-color: #f6b5ac;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #FBFCFC;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    nav {
+      background-color: #ff8c94;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav a {
+      color: #FBFCFC;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    main {
+      margin: 20px;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #f6b5ac;
+    }
+
+    footer {
+      background-color: #f6b5ac;
+      color: #FBFCFC;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function convert() {
+      var millimeters = parseFloat(document.getElementById("millimeters").value);
+      
+      // Convert to centimeters
+      var centimeters = millimeters / 10;
+      document.getElementById("centimeters").value = centimeters;
+      
+      // Convert to meters
+      var meters = millimeters / 1000;
+      document.getElementById("meters").value = meters;
+      
+      // Convert to kilometers
+      var kilometers = millimeters / 1000000;
+      document.getElementById("kilometers").value = kilometers;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>'*•.¸♡ Millimeter Converter ♡¸.•*'</h1>
+  </header>
+  
+  <nav>
+    <a>༶•┈┈୨♡୧┈┈•༶</a>
+  </nav>
+  
+  <main>
+  <center>
+  <h2>◦ Millimeter Converter ◦</h2>
+  <label for="millimeters">Millimeters:</label>
+  <input type="number" id="millimeters" placeholder="Enter millimeters" />
+  <button onclick="convert()">Convert</button>
+  
+  <br /><br />
+  
+  <label for="centimeters">Centimeters:</label>
+  <input type="text" id="centimeters" disabled />
+  
+  <br /><br />
+  
+  <label for="meters">Meters:</label>
+  <input type="text" id="meters" disabled />
+  
+  <br /><br />
+  
+  <label for="kilometers">Kilometers:</label>
+  <input type="text" id="kilometers" disabled />
+  </center>
+  </main>
+  
+  <footer>
+    ༶•┈┈୨♡୧┈┈•༶
+  </footer>
+</body>
+</html>
